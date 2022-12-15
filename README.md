@@ -105,7 +105,7 @@
 1. Склонируйте репозиторий:
 
 ```
-$ $ git clone https://github.com/Yarengina/Music-app.git
+$ git clone https://github.com/Yarengina/Music-app.git
 ```
 
 2. Установите зависимости:
