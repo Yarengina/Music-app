@@ -6,7 +6,7 @@ import { setLogin, setToken } from '../../store/slices/authSlice'
 import { useGetTokenMutation, useUserLoginMutation } from '../../api/musicApi'
 import * as S from './styles'
 
-function LoginButton({ username, password, email }) {
+function LoginButton({ password, email }) {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
@@ -15,16 +15,14 @@ function LoginButton({ username, password, email }) {
 
     const onSubmitForm = (e) => {
         e.preventDefault()
-        if (!username || !email || !password) {
+        if (!email || !password) {
             alert('Введите свои учетные данные или зарегистрируйтесь')
         } else {
             login({
-                username,
                 email,
                 password,
             })
             getToken({
-                username,
                 email,
                 password,
             })

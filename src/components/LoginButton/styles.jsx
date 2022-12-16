@@ -14,7 +14,8 @@ export const FormButton = styled.button`
     border-radius: 6px;
     border: 0;
     cursor: pointer;
-    margin: 10px;
+    margin: 50px 10px 20px;
+
     :hover {
         background-color: rgb(64 8 120);
     }
@@ -28,4 +29,6 @@ export const ErrorMessage = styled.span`
     font-size: 12px;
     text-align: center;
     max-width: 280px;
+    position: absolute;
+    top: 220px;
 `
