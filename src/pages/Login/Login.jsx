@@ -5,15 +5,10 @@ import logo from '../../img/logo_modal.png'
 import * as S from './styles'
 
 export default function Login() {
-    const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const navigate = useNavigate()
-
-    const handleNameChange = ({ target }) => {
-        setUsername(target.value)
-    }
 
     const handleEmailChange = ({ target }) => {
         setEmail(target.value)
@@ -33,12 +28,7 @@ export default function Login() {
                 <S.Form>
                     <S.Logo src={logo} alt="logo" />
                     <S.Input
-                        placeholder="Имя"
-                        type="text"
-                        onChange={handleNameChange}
-                    />
-                    <S.Input
-                        placeholder="Email"
+                        placeholder="Логин (email)"
                         type="text"
                         onChange={handleEmailChange}
                     />
@@ -47,11 +37,7 @@ export default function Login() {
                         type="password"
                         onChange={handlePasswordChange}
                     />
-                    <LoginButton
-                        email={email}
-                        username={username}
-                        password={password}
-                    />
+                    <LoginButton email={email} password={password} />
                     <S.SignupButton type="button" onClick={handleSignup}>
                         Зарегистрироваться
                     </S.SignupButton>

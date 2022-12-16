@@ -40,9 +40,10 @@ export const Input = styled.input`
     border-bottom: 1px rgba(208, 206, 206) solid;
     outline: none;
     padding: 8px 1px;
+    margin: 15px 0px 20px;
 
     :not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     ::placeholder {
