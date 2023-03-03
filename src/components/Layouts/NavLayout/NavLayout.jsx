@@ -6,10 +6,10 @@ export default function NavLayout() {
     return (
         <S.LayoutWrapper>
             <S.LayoutContainer>
-                <main>
+                <S.Main>
                     <Navigation />
                     <Outlet />
-                </main>
+                </S.Main>
             </S.LayoutContainer>
         </S.LayoutWrapper>
     )
