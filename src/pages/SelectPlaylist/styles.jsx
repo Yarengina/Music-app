@@ -22,6 +22,11 @@ export const CenterBlockTitle = styled.h2`
     line-height: 72px;
     letter-spacing: -0.8px;
     color: #ffffff;
+    @media (max-width: 1200px) {
+        font-size: 44px;
+        line-height: 52px;
+        margin-bottom: 20px;
+    }
 `
 
 export const TitleWrapper = styled.div`
@@ -32,6 +37,9 @@ export const TitleWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    @media (max-width: 1890px) {
+        justify-content: flex-start;
+    }
 `
 
 export const PlaylistTitles = styled.div`
@@ -45,20 +53,45 @@ export const PlaylistTitles = styled.div`
 `
 
 export const TitleTrack = styled(PlaylistTitles)`
-    width: 38%;
+    width: 20%;
+    @media (max-width: 1890px) {
+        width: 30%;
+    }
 `
 
 export const TitleAuthor = styled(PlaylistTitles)`
     width: 321px;
+    @media (max-width: 1760px) {
+        width: 280px;
+    }
+    @media (max-width: 1660px) {
+        width: 240px;
+    }
+    @media (max-width: 1600px) {
+        width: 140px;
+    }
+    @media (max-width: 1300px) {
+        width: 240px;
+    }
 `
 
 export const TitleAlbum = styled(PlaylistTitles)`
     width: 245px;
+    @media (max-width: 1600px) {
+        width: 140px;
+        margin: 0px 30px 0px 30px;
+    }
+    @media (max-width: 1300px) {
+        display: none;
+    }
 `
 
 export const TitleTime = styled.div`
     width: 60px;
     text-align: end;
+    @media (max-width: 1890px) {
+        text-align: start;
+    }
 `
 
 export const WatchIcon = styled.img`
