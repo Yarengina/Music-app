@@ -10,7 +10,7 @@ function LoginButton({ password, email }) {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const [login, { data, isSuccess }] = useUserLoginMutation()
+    const [login, { data, isSuccess, isLoading }] = useUserLoginMutation()
     const [getToken, { data: token, error: tokenError }] = useGetTokenMutation()
 
     const onSubmitForm = (e) => {
@@ -31,11 +31,11 @@ function LoginButton({ password, email }) {
 
     useEffect(() => {
         if (isSuccess) {
+            navigate('/tracks')
             document.cookie = `username=${data?.username}`
             dispatch(setToken(token?.access))
             document.cookie = `token=${token?.refresh}`
             dispatch(setLogin())
-            navigate('/tracks')
         }
     }, [token])
 
@@ -44,9 +44,16 @@ function LoginButton({ password, email }) {
             {tokenError && (
                 <S.ErrorMessage>{tokenError.data.detail}</S.ErrorMessage>
             )}
-            <S.FormButton type="button" onClick={(e) => onSubmitForm(e)}>
-                Войти
-            </S.FormButton>
+            {!isLoading && (
+                <S.FormButton type="button" onClick={(e) => onSubmitForm(e)}>
+                    Войти
+                </S.FormButton>
+            )}
+            {isLoading && (
+                <S.FormButton type="button" onClick={(e) => onSubmitForm(e)}>
+                    Выполняем вход ...
+                </S.FormButton>
+            )}
         </>
     )
 }
