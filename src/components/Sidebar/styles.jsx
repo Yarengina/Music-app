@@ -5,10 +5,16 @@ export const Sidebar = styled.div`
     padding: 154px 70px 20px 70px;
     transition: right 0.5s;
 
-    @media (max-width: 1889px) {
+    @media (max-width: 1890px) {
         position: absolute;
         background-color: #181818;
         right: 0;
+    }
+    @media (max-width: 1800px) {
+        padding-left: 0px;
+    }
+    @media (max-width: 1200px) {
+        padding-right: 40px;
     }
 `
 
@@ -18,6 +24,12 @@ export const SidebarBlock = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    @media (max-height: 960px) {
+        padding-top: 100px;
+    }
+    @media (max-height: 800px) {
+        padding-top: 60px;
+    }
 `
 
 export const SidebarList = styled.div`
@@ -25,4 +37,10 @@ export const SidebarList = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    @media (max-height: 960px) {
+        gap: 16px;
+    }
+    @media (max-height: 800px) {
+        gap: 10px;
+    }
 `

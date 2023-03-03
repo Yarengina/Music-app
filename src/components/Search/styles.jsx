@@ -7,6 +7,9 @@ export const SearchBlock = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media (max-width: 1300px) {
+        margin-bottom: 30px;
+    }
 `
 
 export const SearchIcon = styled.img`
