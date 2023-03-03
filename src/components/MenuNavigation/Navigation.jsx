@@ -20,7 +20,9 @@ export default function Navigation() {
 
     return (
         <S.Navigation>
-            <S.LogoNav src={logo} alt="logo" />
+            <NavLink to="/tracks">
+                <S.LogoNav src={logo} alt="logo" />
+            </NavLink>
             <S.Burger onClick={burgerClickHandler}>
                 {menuShown ? (
                     <>

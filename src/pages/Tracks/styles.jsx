@@ -22,10 +22,15 @@ export const CenterBlockTitle = styled.h2`
     line-height: 72px;
     letter-spacing: -0.8px;
     color: #ffffff;
-    @media (max-width: 1200px) {
+    @media (max-width: 1600px) {
         font-size: 44px;
         line-height: 52px;
         margin-bottom: 20px;
+    }
+    @media (max-width: 1400px) {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
     }
 `
 
