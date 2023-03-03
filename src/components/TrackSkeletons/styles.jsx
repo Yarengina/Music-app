@@ -71,19 +71,41 @@ export const TrackImageSkeleton = styled.img`
 export const TrackTitleSkeleton = styled(Skeleton)`
     position: relative;
     overflow: hidden;
-    width: 371px;
+    width: 20%;
+    @media (max-width: 1890px) {
+        width: 30%;
+    }
 `
 
 export const TrackAuthorSkeleton = styled(Skeleton)`
     position: relative;
     overflow: hidden;
     width: 321px;
+    @media (max-width: 1760px) {
+        width: 280px;
+    }
+    @media (max-width: 1660px) {
+        width: 240px;
+    }
+    @media (max-width: 1600px) {
+        width: 140px;
+    }
+    @media (max-width: 1300px) {
+        width: 240px;
+    }
 `
 
 export const TrackAlbumSkeleton = styled(Skeleton)`
     position: relative;
     overflow: hidden;
     width: 245px;
+    @media (max-width: 1600px) {
+        width: 140px;
+        margin: 0px 30px 0px 30px;
+    }
+    @media (max-width: 1300px) {
+        display: none;
+    }
 `
 
 export const TrackTimeSkeleton = styled(Skeleton)`
