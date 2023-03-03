@@ -7,8 +7,11 @@ export const SearchBlock = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    @media (max-width: 1300px) {
+    @media (max-width: 1600px) {
         margin-bottom: 30px;
+    }
+    @media (max-width: 1400px) {
+        margin-bottom: 20px;
     }
 `
 

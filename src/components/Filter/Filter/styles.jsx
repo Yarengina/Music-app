@@ -5,6 +5,12 @@ export const FilterWrapper = styled.div`
     flex-direction: row;
     align-items: center;
     margin-bottom: 51px;
+    @media (max-width: 1600px) {
+        margin-bottom: 40px;
+    }
+    @media (max-width: 1400px) {
+        margin-bottom: 30px;
+    }
 `
 
 export const FilterTitle = styled.div`

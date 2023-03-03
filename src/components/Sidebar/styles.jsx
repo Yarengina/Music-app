@@ -27,8 +27,11 @@ export const SidebarBlock = styled.div`
     @media (max-height: 960px) {
         padding-top: 100px;
     }
-    @media (max-height: 800px) {
+    @media (max-height: 860px) {
         padding-top: 60px;
+    }
+    @media (max-height: 800px) {
+        padding-top: 40px;
     }
 `
 
