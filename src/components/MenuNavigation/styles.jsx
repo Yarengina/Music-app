@@ -34,6 +34,12 @@ export const Navigation = styled.section`
     transition: background-color 0.5s ease;
 
     @media (max-width: 1470px) {
+        width: 200px;
+    }
+    @media (max-width: 1200px) {
+        width: 140px;
+    }
+    @media (max-width: 440px) {
         position: absolute;
         background-color: transparent;
     }
@@ -45,6 +51,11 @@ export const LogoNav = styled.img`
     padding: 13px 0 13px 0;
     background-color: transparent;
     margin-bottom: 20px;
+    @media (max-width: 1200px) {
+        width: 100px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
 `
 
 export const Burger = styled.div`
