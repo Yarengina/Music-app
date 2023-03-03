@@ -17,3 +17,10 @@ export const LayoutContainer = styled.div`
     overflow: hidden;
     transition: background-color 0.5s ease;
 `
+
+export const Main = styled.div`
+    min-height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`
