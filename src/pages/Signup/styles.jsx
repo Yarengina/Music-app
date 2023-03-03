@@ -37,7 +37,7 @@ export const Input = styled.input`
     line-height: 24px;
     letter-spacing: -0.05px;
     border: 0;
-    border-bottom: 1px rgba(208, 206, 206) solid;
+    border-bottom: 1px rgb(123 120 120) solid;
     outline: none;
     padding: 8px 1px;
 
@@ -46,7 +46,7 @@ export const Input = styled.input`
     }
 
     ::placeholder {
-        color: rgba(208, 206, 206);
+        color: rgb(123 120 120);
     }
 `
 

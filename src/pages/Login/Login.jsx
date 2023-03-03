@@ -28,7 +28,7 @@ export default function Login() {
                 <S.Form>
                     <S.Logo src={logo} alt="logo" />
                     <S.Input
-                        placeholder="Логин (email)"
+                        placeholder="Email"
                         type="text"
                         onChange={handleEmailChange}
                     />
